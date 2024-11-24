@@ -1,0 +1,6 @@
+Area,Risco,Casos,Temperatura,Umidade,QualidadeAgua,Data
+Zona Central,Alto,150,28,70,Médio,2024-01-01
+Zona Leste,Médio,80,26,65,Bom,2024-01-02
+Zona Sul,Baixo,30,24,60,Ótimo,2024-01-03
+Zona Norte,Médio,60,25,68,Médio,2024-01-04
+Zona Oeste,Alto,200,29,75,Ruim,2024-01-05
