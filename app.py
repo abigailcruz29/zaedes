@@ -1,8 +1,16 @@
 import streamlit as st
 
 # Configurações iniciais da página
+#st.set_page_config(
+#    page_title="ZAedes - Monitoramento",
+#    layout="wide",
+#)
+
+# Configuração da página
 st.set_page_config(
+    #page_title="Prevenção de Doenças do Aedes aegypti",
     page_title="ZAedes - Monitoramento",
+    page_icon="🦟",
     layout="wide",
 )
 
@@ -15,11 +23,14 @@ Utilizando aprendizado de máquina e big data para monitorar e prevenir surtos d
 # Menu lateral
 menu = st.sidebar.radio(
     "Menu",
-    ["Dashboard", "Mapa de Risco", "Notificações", "Administração"]
+    ["Home","Dashboard", "Mapa de Risco", "Notificações", "Administração"]
 )
 
 # Navegação entre páginas
-if menu == "Dashboard":
+if menu == "Home":
+    from Home import main as home
+    home()
+elif menu == "Dashboard":
     from Dashboard import main as dashboard
     dashboard()
 elif menu == "Mapa de Risco":
